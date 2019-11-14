@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import People
+from .models import People, Animes
 
 # Create your views here.
 
@@ -10,4 +10,5 @@ class HomeView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["pessoas"] = People.objects.all()
+        context["animes"] = Animes.objects.all()
         return context

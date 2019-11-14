@@ -6,19 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    <title>Document</title>
+    <title>Um site meio Frankstein</title>
+    <script>
+        let btnclicks = 1;
+    </script>
+
 </head>
-<body>
-    <h1>Treinamento PTA</h1>
+    <body>
+        <div class="box">
+            <div>
+                <img class="boximg" src="{% static 'css/eu.jpg' %}" alt="Kristian" >
+            </div>
+            <div class="listabox">
+                <ul class = "lista">
+                    <h3>Sobre mim</h3>
+                    <li>Fã de anime 
+                        <ol> Eis alguns dos meus favoritos</ol>
+                        <ol>
+                            {% for anime in animes %}
+                            <li>
+                                <h5>Nome: {{ anime.Aname }}</h2>
+                                <h6>ID: {{ anime.ID }}</h6>
+                            </li>
+                            {% endfor %}
+                        </ol>
+                    
+                
+                    <ol><button id="butoum" onclick="mostraAcapivara()" class="butao" type="button">Entediado?</button></ol>
+                </li>
+                    <img id="lilCap" class="capim" src="{% static 'css/capivarinha.jpg' %}" alt="Capivarinha" style="visibility: hidden;">
 
-    {% for pessoa in pessoas %}
-        <h2>Nome: {{ pessoa.name }}</h2>
-        <p>CPF: {{ pessoa.cpf }}</p>
+                </ul>
+                <div>
+                    <ul class="lista2">
+                        <li>5º período de CansaÇo (CC)</li>
+                        <li><a class="link" href="https://cin.ufpe.br/~gkqsj">Link</a> do Cin(rlx, n tem nada aqui)</li>
+                        <li>Trainee do CITi
+                            <ol>Eis algumas pessoas que estiveram nos meus <strong>TIMES</strong>: </ol>
+                            <ol><i><font size="1">E alguns CPF's falsos pq databases precisam de chaves primárias né...</font></i></ol>
+                            
+                            {% for pessoa in pessoas %}
+                                
+                                <h2>Nome: {{ pessoa.name }}</h2>
+                                <p>CPF<i><font size="1">imaginário</font></i>: {{ pessoa.cpf }}</p>
 
-            {% if pessoa.email %}
-                <p>Email: {{ pessoa.email }}</p>
-            {% endif %}
+                            {% endfor %}
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
 
-    {% endfor %}
-</body>
+            function mostraAcapivara() {
+                btnclicks++;
+                if(btnclicks % 2 == 0){
+                    document.getElementById("butoum").innerHTML = "Olha! Uma capivara tomando banho";
+                    document.getElementById('lilCap').style.visibility="visible";
+                }else{
+                    document.getElementById("butoum").innerHTML = "Entediado?";
+                    document.getElementById('lilCap').style.visibility="hidden";
+                }
+            }
+
+        </script>
+    </body>
 </html>

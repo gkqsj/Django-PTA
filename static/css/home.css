@@ -1,7 +1,76 @@
 body{
-    background-color: aqua;
+    background-image: url("https://static.meionorte.com/uploads/imagens/2018/1/29/cao-e-flagrado-brincando-de-pega-pega-com-capivara-video-8150bd52-7f5f-439a-90fc-641eaa10747f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-h1{
-    color: gray;
+.box{
+    border-radius: 15px;
+    margin: 40px;
+    box-shadow: 10px 10px 8px #888888;
+    display: flex;
+    padding-bottom: 40px;
+    background-image: linear-gradient(white, GreenYellow,GreenYellow, GreenYellow, GreenYellow, white);
+}
+.boximg{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 40%;
+    border-radius: 100px;
+    width: 200px;
+}
+.lista{
+    margin-left: 10px;
+    width: 442px;
+    padding: 30px;
+    padding-right: 0px;
+}
+.lista2{
+    position: static;
+    padding: 30px;
+    padding-left: 0px;
+}
+.listabox{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 16px;
+    font-family: 'Roboto';
+    border-radius: 15px;
+    background: linear-gradient(white, lightblue, lightblue, lightblue, lightblue, lightblue, white);
+    padding: 30px;
+}
+.link{
+  text-decoration: none;
+}
+.butao {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:11px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 17px;
+	text-decoration:none;
+    text-shadow:0px 0px 0px #2f6627;
+    margin-top: 30px;
+}
+.butao:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.butao:active {
+	position:relative;
+	top:1px;
+}
+.capim{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 100px;
+    width: 200px;
+}
+.off{
+    display: none;
 }

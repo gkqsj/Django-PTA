@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="archive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Um site meio Frankenstein</title>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <img class="boximg" src="eu.jpg" alt="Kristian" >
+        </div>
+        <ul class = "lista">
+            <h3>Sobre mim</h3>
+            <li>Fã de anime</li>
+            <li>Trainee do CITi</li>
+            <li>5º período de CansaÇo (CC)</li>
+            <li><a class="link" href="https://cin.ufpe.br/~gkqsj">Link</a> do Cin(rlx, n tem nada aqui)</li>
+            <button id="butoum" onclick="aaa()" class="butao" type="button">Entediado?</button>
+        </ul>
+    </div>
+
+    <script>
+        function aaa() {
+            document.getElementById("butoum").innerHTML = "Olha, uma capivara tomando banho";
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Um site meio Frankstein</title>
+</head>
+<body>
+        <div class="box">
+            <div>
+                <img class="boximg" src="eu.jpg" alt="Kristian" >
+            </div>
+            <ul class = "lista">
+                <h3>Sobre mim</h3>
+                <li>Fã de anime</li>
+                <li>Trainee do CITi</li>
+                <li>5º período de CansaÇo (CC)</li>
+                <li><a class="link" href="https://cin.ufpe.br/~gkqsj">Link</a> do Cin(rlx, n tem nada aqui)</li>
+                <button id="butoum" onclick="aaa()" class="butao" type="button">Entediado?</button>
+            </ul>
+        </div>
+    
+        <script>
+            function aaa() {
+                document.getElementById("butoum").innerHTML = "Olha, uma capivara tomando banho";
+            }
+        </script>
+    
+    
+    </body>
+</html>
